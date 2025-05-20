@@ -10,21 +10,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     header("Location: form.html");
     exit;
+
 }
 ?>
-<HTML>
-    <HEAD>
-        <TITLE> Register </TITLE>
-        <META charset="UTF-8">
-    </HEAD>
-    <BODY>
-        <p ALIGN=center> Register: </p>
-        <FORM METHOD="post" ACTION="register.php">
-            Username: <INPUT TYPE="text" NAME="username" required><br>
-            Password: <INPUT TYPE="password" NAME="password" required><br>
-            <INPUT TYPE="submit" VALUE="Register">
-            <INPUT TYPE="reset" VALUE="Reset">
-        </FORM>
-        <p>Already have an account? <a href="form.html">Login</a></p>
-    </BODY>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Register</h2>
+    <form method="post" action="register.php" style="text-align: center;">
+        <p>Username: <input type="text" name="username" required></p>
+        <p>Password: <input type="password" name="password" required></p>
+        <p>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </p>
+        <p>Already have an account? <a href="login.php">Login</a></p>
+    </form>
+</body>
+</html>
