@@ -1,0 +1,2 @@
+This project is a PHP-based, object-oriented password manager that allows users to register with a hashed password, which is used to encrypt a unique AES key for each user. The application enables secure generation and storage of passwords in a MySQL database, where each password is encrypted using the user's AES key. Users can configure password generation parameters via the interface, and all data is stored with associated metadata. The system emphasizes secure encryption, proper use of OOP principles, and database integration.
+
